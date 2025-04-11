@@ -1,0 +1,170 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+  <title>Grid</title>
+  <style>
+   body
+   
+    {
+      background-image:linear-gradient(135deg,rgb(210, 105, 242),rgb(30, 49, 160)); background-size:cover; background-attachment: fixed;
+              font-family: "Sour Gummy", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 500; font-size: 25px; color:rgb(43, 5, 67)
+      }
+  
+      .container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navigation Navigation Navigation"
+    "Content Content Content"
+    "Content Content Content"
+    "extra extra extra"
+    "footer footer footer";
+}
+
+.Navigation { grid-area: Navigation; background-color:rgb(138, 43, 226); #navcontainer
+{
+margin: 0;
+padding: 0;
+height: 22px;
+font: 11px Verdana, sans-serif;
+width: 100%;
+border-bottom: 1px solid #3f0b78;
+list-style-type: none;
+background:rgb(65, 12, 114);
+}
+
+#navlist li
+{
+float: left;
+margin: 0;
+padding: 0;
+width:19%;
+display: block;
+}
+
+#navlist li a, #navlist li a:link
+{
+background: #b65af8;
+color: #2e1941;
+text-decoration: none;
+padding: 3px 3px 3px 5px;
+display: block;
+}
+
+#navlist li a:hover
+{
+color: #039;
+border-bottom: 3px solid rgb(180, 7, 192);
+cursor: pointer;
+background: #8229c2;
+}
+
+#navlist li a#current, #navlist li a#current:link
+{
+color: #000;
+cursor: default;
+font-weight: bold;
+border-bottom: 3px solid #8229c2;
+}
+
+#navlist li a#current:hover
+{
+border-bottom: 3px solid rgb(180, 7, 192);
+background: #b042eb;
+}
+}
+
+.Content { grid-area: Content; background-color: mediumvioletred; }
+
+.extra { grid-area: extra; background-color: rgb(79, 5, 148);}
+
+.footer { grid-area: footer; background-color: rgb(204, 92, 219);}
+
+#logan {
+  width:182px; height: 218px; background-image: url(logandefault.png);
+}
+#logan:hover {
+  background-image: url(logantalk.png);
+}
+
+#oscar {
+  width:174px; height: 204px; background-image: url(oscardefault.png);
+}
+#oscar:hover {
+  background-image: url(oscartalk.png);
+}
+#zack {
+  width:174px; height: 210px; background-image: url(zackdefault.png);
+}
+#zack:hover {
+  background-image: url(zacktalk.png);
+}
+#sky {
+  width:142px; height: 152px; background-image: url(skydefault.png);
+}
+#sky:hover {
+  background-image: url(skytalk.png);
+}
+#faces {display: flex;
+justify-content: space-around;
+align-items: flex-end;}
+  </style>
+  </head>
+ 
+  
+  <body>
+    <h1>Grid</h1>
+
+    <div class="container">
+
+      <div class="Navigation">
+        <p>Navigation</p> <div id="navcontainer">
+          <ul id="navlist">
+          <li id="active"><a href="index.html" id="current">Home</a></li>
+          <li><a href="links.html">links</a></li>
+          <li><a href="transition.html">transitions</a></li>
+          <li><a href="images.html">poster</a></li>
+          <li><a href="float.html">pineapple</a></li>
+          </ul>
+          </div>
+      </div>
+
+      <div class="extra">
+        <p>extra</p>
+        <p>These are some cool drawings of me and some of my friends that we use for streams!
+          They're of me, Oscar, Zack, and Sky in that order.
+        </p>
+      </div>
+     
+      <div class="Content">
+        <p>Content</p>
+        <div id="faces">
+        <div id="logan"></div>
+        <!--<img src="logandefault.png" alt="a drawing of me">-->
+        <div id="oscar"> </div>
+        <!--<img src="oscardefault.png" ; alt="a drawing of Oscar"; />-->
+        <div id="zack"> </div>
+        <!--<img src="zackdefault.png" ; alt="a drawing of Zack"/>-->
+        <div id="sky"> </div>
+        <!--<img src="skydefault.png" ; alt="a drawing of Sky as a cool bug"/>-->
+      </div>
+     </div>
+      <div class="footer">
+        <p>footer</p>
+        <p>(I don't actually have anything to put here but I wanted another segment)</p>
+      </div>
+    </div>
+</body>
+
+</html>
