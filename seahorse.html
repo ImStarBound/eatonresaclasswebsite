@@ -4,31 +4,88 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Rubik+Doodle+Shadow&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  
   <title>seahorse serenity</title>
   <style>
+    
+    h1 {font-family: "Rubik Doodle Shadow", system-ui;, sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600; font-size: 30px;}
+    body {background-image: url(lined.png);
+      background-repeat; font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;font-size: 25px;
+  font-style:normal;
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
 
+#navcontainer li { margin: 0 0 3px 0; }
+
+#navcontainer a
+{
+display: block;
+padding: 2px 2px 2px 24px;
+border: 1px solid #8709e8;
+width: 160px;
+background-color: #999;
+background-image: url(button.png); 
+}
+
+#navcontainer a:link, #navlist a:visited
+{
+color: #ffffff;
+text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+border: 1px solid #333;
+background-color: rgb(23, 6, 133);
+background-image: url(images/l1_over.gif);
+color: #3e6787;
+}
+
+#active a:link, #active a:visited, #active a:hover
+{
+border: 1px solid #333;
+background-color: rgb(23, 6, 133);
+background-image: url(rgb(23, 6, 133));
+color: #ffffff;
+}
   </style>
 </head>
 
 <body>
   <header>
     <h1>seahorse serenity</h1>
-    <img src="#" alt="seahorses are fun" />
+    <img src="seahorsedrawing.png" alt="seahorses are fun" />
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Seahorse Home</a></li>
-      <li><a href="#">Seahorse News</a></li>
+  <div id="navcontainer">
+    <ul id="navlist">
+    <li id="active"><a href="#" id="current">Seahorse Home</a></li>
+    <li><a href="#">Seahorse News</a></li>
       <li><a href="#">Seahorse Science</a></li>
       <li><a href="#">Seahorse Fiction</a></li>
       <li><a href="#">Seahorse Fables</a></li>
       <li><a href="#">Seahorse Songs</a></li>
     </ul>
+    </div>
+
+ 
   </nav>
 
   <article>
-    <img src="#" alt="seahorses are fun" />
+    <img src="seahorsedrawing.png" alt="seahorses are fun" />
     <h1>SEAHORSE FACTS</h1>
     <h2>Name</h2>
     <p>The Latin name for seahorse is Hippocampus which means "Horse
